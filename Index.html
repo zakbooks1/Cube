@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World Shapes</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.162.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.162.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Title Screen -->
+<div id="titleScreen">
+  <h1>3D Shapes Playground</h1>
+  <button id="startButton">Start</button>
+</div>
+
+  <div id="ui">
+    <div id="ui">
+  <label for="shapeSelect">Choose Shape:</label>
+  <select id="shapeSelect">
+    <option value="cube">Cube</option>
+    <option value="sphere">Sphere</option>
+    <option value="cone">Cone</option>
+    <option value="torus">Torus</option>
+    <option value="cylinder">Cylinder</option>
+    <option value="dodecahedron">Dodecahedron</option>
+    <option value="icosahedron">icosahedron</option>
+    <option value="Plane">Plane</option>
+    <option value="triangle">triangle</option>
+  </select>
+
+  <!-- <<< ADD THIS DROPDOWN FOR MODE >>> -->
+  <label for="modeSelect">Mode:</label>
+  <select id="modeSelect">
+    <option value="mesh">Mesh</option>
+    <option value="particles">Particle Outline</option>
+  </select>
+</div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
